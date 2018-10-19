@@ -1,0 +1,34 @@
+@startuml ER
+
+!define MAIN_ENTITY #E2EFDA-C6E0B4
+!define MAIN_ENTITY_2 #FCE4D6-F8CBAD
+
+!define MASTER_MARK_COLOR AAFFAA
+!define TRANSACTION_MARK_COLOR FFAA00
+
+skinparam class {
+  BackgroundColor METAL
+  BorderColor Black
+  ArrowColor Black
+}
+
+package "system" as target_system {
+
+  entity "球団マスタ" as team <<M,MASTER_MARK_COLOR>> MAIN_ENTITY {
+    + ID [PK]
+    --
+    球団名
+  }
+
+  entity "コメント" as comment <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
+    + ID [PK]
+    + 球団ID [PK]
+    --
+    コメント
+    日付
+  }
+}
+
+team ----o{ comment
+
+@enduml
