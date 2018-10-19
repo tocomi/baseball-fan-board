@@ -14,13 +14,13 @@ skinparam class {
 
 package "system" as target_system {
 
-  entity "teams" as team <<M,MASTER_MARK_COLOR>> MAIN_ENTITY {
+  entity "teams" <<M,MASTER_MARK_COLOR>> MAIN_ENTITY {
     + id [PK]
     --
     name
   }
 
-  entity "comments" as comment <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
+  entity "posts" <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
     + id [PK]
     --
     # team_id [FK(teams, id)]
@@ -29,6 +29,6 @@ package "system" as target_system {
   }
 }
 
-team ----o{ comment
+teams ----o{ posts
 
 @enduml
