@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+ys:
+  id: 1
+  name: ヤクルトスワローズ
+
+g:
+  id: 2
+  name: 読売ジャイアンツ
+
+c:
+  id: 3
+  name: 広島東洋カープ
+
+de:
+  id: 4
+  name: 横浜DeNAベイスターズ
+
+t:
+  id: 5
+  name: 阪神タイガース
+
+d:
+  id: 6
+  name: 中日ドラゴンズ
+
+sb:
+  id: 7
+  name: 福岡ソフトバンクホークス
+
+l:
+  id: 8
+  name: 埼玉西武ライオンズ
+
+m:
+  id: 9
+  name: 千葉ロッテマリーンズ
+
+fs:
+  id: 10
+  name: 北海道日本ハムファイターズ
+
+bs:
+  id: 11
+  name: オリックスバファローズ
+
+e:
+  id: 12
+  name: 東北楽天ゴールデンイーグルス
