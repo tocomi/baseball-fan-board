@@ -22,8 +22,8 @@ package "system" as target_system {
 
   entity "comments" as comment <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
     + id [PK]
-    + team_id [PK]
     --
+    # team_id [FK(teams, id)]
     comment
     date
   }
