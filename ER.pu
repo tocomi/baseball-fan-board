@@ -14,18 +14,18 @@ skinparam class {
 
 package "system" as target_system {
 
-  entity "球団マスタ" as team <<M,MASTER_MARK_COLOR>> MAIN_ENTITY {
-    + ID [PK]
+  entity "teams" as team <<M,MASTER_MARK_COLOR>> MAIN_ENTITY {
+    + id [PK]
     --
-    球団名
+    name
   }
 
-  entity "コメント" as comment <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
-    + ID [PK]
-    + 球団ID [PK]
+  entity "comments" as comment <<T,TRANSACTION_MARK_COLOR>> MAIN_ENTITY_2 {
+    + id [PK]
+    + team_id [PK]
     --
-    コメント
-    日付
+    comment
+    date
   }
 }
 
