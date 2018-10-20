@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  team: one
-  comment: MyText
+001:
+  team_id: 1
+  comment: おめでとうございます
 
-two:
-  team: two
-  comment: MyText
+002:
+  team_id: 1
+  comment: トリプルスリー
+
+003:
+  team_id: 2
+  comment: 9800
