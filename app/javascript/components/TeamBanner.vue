@@ -24,6 +24,7 @@ export default {
   width: 15%;
   border-radius: 5px;
   text-align: center;
+  background-color: #555;
   &.team-1 {
     background-color: rgb(24, 41, 109);
     &:hover {
