@@ -1,33 +1,18 @@
 <template lang="pug">
-  div#index
-    TeamBanner(v-for="team in teams", :team="team")
+  div.team-name(:class="'team-' + team.id")
+    router-link.team-link(:to="{ name: 'post', params: { id: team.id } }") {{ team.name }}
 </template>
 
 <script>
-import axios from '../lib/axios'
-import TeamBanner from '../components/TeamBanner.vue'
-
 export default {
+  props: [
+    "team",
+  ],
   data: function () {
     return {
-      teams: []
+
     }
   },
-  created: function() {
-    this.getTeams()
-  },
-  methods: {
-    getTeams() {
-      axios.get("api/v1/teams").then(
-        (res) => {
-          this.teams = res.data
-        }
-      )
-    }
-  },
-  components: {
-    TeamBanner: TeamBanner,
-  }
 }
 </script>
 
