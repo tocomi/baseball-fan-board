@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router';
-import Index from './components/Index.vue';
-import Post from './components/Post.vue'
+import Index from './views/Index.vue';
+import Post from './views/Post.vue'
 
 const routes = [
   {
