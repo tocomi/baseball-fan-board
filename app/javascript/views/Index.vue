@@ -32,31 +32,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.team-name {
-  float: left;
-  margin: 5px;
-  height: 50px;
-  width: 15%;
-  border-radius: 5px;
-  text-align: center;
-  &.team-1 {
-    background-color: rgb(24, 41, 109);
-    &:hover {
-      background-color: rgb(73, 92, 168);
-    }
-  }
-  &.team-2 {
-    background-color: rgb(255, 166, 0);
-    &:hover {
-      background-color: rgb(255, 217, 0);
-    }
-  }
-}
-.team-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: #FFFFFF;
-}
 </style>
