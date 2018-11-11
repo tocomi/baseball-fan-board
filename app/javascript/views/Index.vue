@@ -1,6 +1,9 @@
 <template lang="pug">
   div#index
-    TeamBanner(v-for="team in teams", :team="team")
+    div#central.league
+      TeamBanner(v-for="team in centralLeague", :team="team")
+    div#pacific.league
+      TeamBanner(v-for="team in pacificLeague", :team="team")
 </template>
 
 <script>
@@ -25,6 +28,14 @@ export default {
       )
     }
   },
+  computed: {
+    centralLeague() {
+      return this.teams.filter((team) => team.id >= 1 && team.id <= 6)
+    },
+    pacificLeague() {
+      return this.teams.filter((team) => team.id >= 7 && team.id <= 12)
+    },
+  },
   components: {
     TeamBanner: TeamBanner,
   }
@@ -32,4 +43,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.league {
+  float: left;
+  width: 550px;
+}
 </style>

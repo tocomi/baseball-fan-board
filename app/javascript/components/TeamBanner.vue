@@ -21,7 +21,7 @@ export default {
   float: left;
   margin: 5px;
   height: 50px;
-  width: 15%;
+  width: 500px;
   border-radius: 5px;
   text-align: center;
   background-color: #555;
